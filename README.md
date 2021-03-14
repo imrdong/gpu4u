@@ -9,6 +9,9 @@
     <a href="https://pypi.org/project/gpu4u/">
         <img alt="PyPI version" src="https://img.shields.io/pypi/v/gpu4u.svg?label=Version&maxAge=10">
     </a>
+    <a href="https://pepy.tech/project/gpu4u">
+        <img alt="PePy downloads" src="https://static.pepy.tech/personalized-badge/gpu4u?period=total&units=international_system&left_color=grey&right_color=brightgreen&left_text=Downloads">
+    </a>
     <a href="https://github.com/imrdong/gpu4u/stargazers/">
         <img alt="GitHub stars" src="https://img.shields.io/github/stars/imrdong/gpu4u.svg?style=social&label=Star&maxAge=10">
     </a>
