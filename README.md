@@ -73,7 +73,7 @@ The outputs of `GPU4U` depending on your number of GPUs and their current usage,
 
 ## Demo
 
-### Script Running with Available GPUs 
+### :smile: Script Running with Available GPUs 
 
 ```
 # Find available GPUs
@@ -86,7 +86,7 @@ Script: CUDA_VISIBLE_DEVICES=1 python train.py --batch_size 64
 Started @: 2021-02-22 13:08:23
 ```
 
-### Script Running with No Available GPUs
+### :disappointed: Script Running with No Available GPUs
 
 ```
 # No available GPUs, start automatic monitoring with waiting time prompt
