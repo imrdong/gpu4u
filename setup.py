@@ -9,7 +9,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="gpu4u",
-    version="0.1.0",
+    version="0.2.0",
     author="mrdong",
     maintainer="mrdong",
     description="A Python Package for Automatically Monitoring & Occupying NVIDIA GPUs",
@@ -18,7 +18,7 @@ setuptools.setup(
     url="https://github.com/imrdong/gpu4u",
     packages=setuptools.find_packages(),
     license="GPL-3.0",
-    install_requires=["pynvml"],
+    install_requires=["pynvml", "requests"],
     classifiers=[
         "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
         "Operating System :: OS Independent",
