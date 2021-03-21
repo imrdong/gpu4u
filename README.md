@@ -30,6 +30,8 @@ A Python Package for Automatically Monitoring & Occupying NVIDIA GPUs
 NVIDIA GPU with latest NVIDIA driver installed. `GPU4U` uses the program `nvidia-smi` to get the GPU status of all NVIDIA GPUs. nvidia-smi should be installed automatically, when you install your NVIDIA driver.
 
 Python libraris:
+
+* json
 * os
 * random
 * re
@@ -37,6 +39,7 @@ Python libraris:
 * time
 * datetime
 * pynvml
+* requests
 
 Tested on CUDA driver version 450.102.04 with Python 3.6.10.
 
@@ -58,6 +61,8 @@ python setup.py install
 
 ## Usage
 
+### Base
+
 To combine `GPU4U` with your Python code, all you have to do is 
 
 * Open a terminal in a folder other than the `GPU4U` folder  
@@ -66,7 +71,20 @@ To combine `GPU4U` with your Python code, all you have to do is
 
 ```python
 >>> from gpu4u import auto_monitor
->>> auto_monitor(script="the_script_you_want_to_run")
+>>> auto_monitor(script="fill_in_your_script_here")
+```
+
+### WeChat
+
+Given `WeChat` token, you can receive notifications from `GPU4U` in `WeChat`.
+
+* Go to [[PushPlus]](http://www.pushplus.plus/) official website, scan the QR code through `WeChat` to log in, and copy your token.
+* The next steps are the same as [Base](#Base) section
+
+```python
+>>> token = "paste_your_token_here"
+>>> from gpu4u import auto_monitor
+>>> auto_monitor(script="fill_in_your_script_here", use_wechat_push=True, token=token)
 ```
 
 The outputs of `GPU4U` depending on your number of GPUs and their current usage, see [Demo](#Demo) for more details.
